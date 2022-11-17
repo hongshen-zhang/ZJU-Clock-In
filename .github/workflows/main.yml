@@ -32,3 +32,9 @@ jobs:
           PASSWORD2: ${{ secrets.PASSWORD2 }}
         run: |
           python3 clock-in.py ${ACCOUNT2} ${PASSWORD2}
+      - name: Clock In3
+        env:
+          ACCOUNT3: ${{ secrets.ACCOUNT3 }}
+          PASSWORD3: ${{ secrets.PASSWORD3 }}
+        run: |
+          python3 clock-in.py ${ACCOUNT3} ${PASSWORD3}
